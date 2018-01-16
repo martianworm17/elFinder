@@ -34,7 +34,7 @@ if (isset($_GET['login']) || isset($_GET['logout']) || isset($_GET['status'])) {
 				} else {
 					header("WWW-Authenticate: Basic realm=\"elFinder-demo\"");
 					header("HTTP/1.0 401 Unauthorized");
-					echo '{"error": "Login faild."}';
+					echo '{"error": "Login failed."}';
 					exit;
 				}
 			}
